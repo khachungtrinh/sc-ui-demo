@@ -1,0 +1,12 @@
+.dt-full-text-v2 { width:100%; box-sizing:border-box; font-family:inherit; color:inherit; }
+.dt-full-text-v2 h3 { margin:0 0 .5rem; font-size:1.35rem; font-weight:600; line-height:1.4; }
+.dt-full-text-v2 [data-dt-icon] { font-family:'Material Symbols Rounded'; font-size:1.35rem; vertical-align:middle; font-weight:400; }
+.dt-full-text-v2 hr { margin:.5rem 0; opacity:.65; }
+.dt-full-text-v2 [data-dt-text] { background:mintCream; color:#31333f; white-space:pre-wrap; overflow-wrap:anywhere; line-height:inherit; }
+.dt-full-text-v2 mark { color:black; padding:0 2px; border-radius:2px; }
+.dt-full-text-v2 nav { display:flex; flex-wrap:wrap; gap:.35rem; align-items:center; margin-top:1rem; }
+.dt-full-text-v2 button { font:inherit; color:inherit; background:transparent; border:1px solid #9996; border-radius:.4rem; padding:.3rem .6rem; cursor:pointer; }
+.dt-full-text-v2 button[aria-current="page"] { background:#f0f2f6; border-color:#777; }
+.dt-full-text-v2 button:disabled { opacity:.45; cursor:default; }
+.dt-full-text-v2 button:focus-visible { outline:2px solid #1678cb; outline-offset:2px; }
+.dt-full-text-v2 [data-dt-caption] { font-size:.875rem; margin-top:.5rem; color:#666; }

@@ -1,0 +1,72 @@
+[data-reading-root]{--reading-control-size:14px;--reading-control-height:40px;}
+[data-reading-root]{width:100%;min-width:0;color:var(--st-text-color);font-family:var(--st-font);font-size:var(--reading-control-size,14px);line-height:1.6;box-sizing:border-box}
+[data-reading-root] *{box-sizing:border-box}
+.reading-label{display:block;margin:0 0 .35rem;font-size:14px;line-height:1.6;font-weight:400}
+.reading-input,.reading-button,.reading-select{font:inherit;color:inherit;border:1px solid var(--st-border-color);border-radius:var(--st-button-radius);background:var(--st-secondary-background-color)}
+.reading-input{display:block;width:100%;min-height:var(--reading-control-height);padding:8px 12px;outline:none;resize:none}
+.reading-input:focus,.reading-select:focus{border-color:var(--st-primary-color);outline:none}
+.reading-input:disabled{opacity:.65;cursor:not-allowed}
+.reading-button{min-height:var(--reading-control-height);padding:6px 12px;display:inline-flex;justify-content:center;align-items:center;gap:6px;cursor:pointer;width:100%;line-height:1.2}
+.reading-button:hover{border-color:var(--st-primary-color);color:var(--st-primary-color)}
+.reading-button:disabled{opacity:.5;cursor:not-allowed}
+.reading-button.primary{background:var(--st-primary-color);color:white;border-color:var(--st-primary-color)}
+.reading-icon{font-family:'Material Symbols Rounded','Material Symbols Outlined';font-weight:400;font-size:20px;line-height:1;white-space:nowrap}
+.reading-select{width:100%;height:var(--reading-control-height);padding:6px 10px;cursor:pointer}
+/* Reading-only parity with st_style.checkbox_as_button_style(); native button
+   activation preserves keyboard behavior without a switch track or thumb. */
+[data-reading-root] .reading-toggle-button{display:flex;justify-content:flex-start;align-items:center;width:100%;min-width:0;min-height:var(--reading-control-height);margin:0;gap:0;padding:.45rem .75rem;border:1px solid var(--st-border-color);border-radius:2px;background:var(--st-background-color);color:color-mix(in srgb,var(--st-text-color) 70%,transparent);font:inherit;font-weight:400;line-height:1.6;text-align:left;cursor:pointer;transition:background-color .2s ease,border-color .2s ease,color .2s ease}
+[data-reading-root] .reading-toggle-button:hover:not(:disabled){background:var(--st-secondary-background-color);border-color:var(--hover-border,#b5b4ad)}
+[data-reading-root] .reading-toggle-button[aria-pressed=true]{background:var(--st-secondary-background-color);border-color:var(--st-border-color);box-shadow:0 1px 3px rgba(0,0,0,.05);color:var(--st-text-color);font-weight:500}
+[data-reading-root] .reading-toggle-button:focus-visible{outline:2px solid var(--hover-border,#b5b4ad);outline-offset:2px}
+[data-reading-root] .reading-toggle-button:disabled{opacity:.5;cursor:not-allowed}
+.reading-code{white-space:pre;overflow:auto;padding:1rem;background:var(--st-secondary-background-color);font-family:var(--st-code-font,monospace);font-size:14px;border-radius:var(--st-base-radius);margin:0}
+.reading-code-wrap{position:relative}.reading-copy{position:absolute;right:6px;top:6px;width:28px;min-height:28px;font-size:12px;border:none;background:transparent;padding:2px}
+.reading-tabs{display:flex;gap:1rem;border-bottom:1px solid var(--st-border-color);margin-bottom:1rem;overflow:auto}
+.reading-tab{border:0;background:transparent;color:inherit;white-space:nowrap;padding:8px 0;font:inherit;cursor:pointer;border-bottom:2px solid transparent;display:flex;align-items:center;gap:5px}
+.reading-tab[aria-selected=true]{border-bottom-color:var(--st-primary-color);color:var(--st-primary-color)}
+.reading-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;min-width:0}
+.reading-table-wrap{overflow:auto}.reading-table{border-collapse:collapse;width:100%;font:inherit}.reading-table td{padding:8px;vertical-align:top;white-space:pre-wrap}
+.reading-json{overflow:auto;font-family:var(--st-code-font);font-size:14px}.reading-json details{margin-left:1rem}.reading-json summary{cursor:pointer}.reading-json pre{white-space:pre-wrap;margin:0}
+.reading-error{color:var(--st-red-color,#a62727);font:inherit;white-space:pre-wrap}
+[data-reading-root] [data-dictionary-root]{font-family:var(--dl-font-reader,"Source Sans",sans-serif);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6)}
+.reading-local-warning{font-size:12px;margin:4px 0;color:var(--st-red-color,#a62727)}
+
+:host [data-dictionary-root] {
+    --dl-bg-main: var(--st-background-color);
+    --dl-bg-sidebar: var(--st-background-color);
+    --dl-dict-bg: var(--st-background-color);
+    --dl-dict-inner-bg: var(--st-background-color);
+    --dl-sidebar-dict-bg: var(--st-background-color);
+    --eng-bg-main: var(--st-background-color);
+    --eng-bg-sidebar: var(--st-background-color);
+    --eng-dict-bg: var(--st-background-color);
+    --eng-dict-inner-bg: var(--st-background-color);
+    --dict-panel-surface: var(--st-background-color);
+    --dl-bg: var(--st-secondary-background-color);
+    --dl-bg-hover: var(--st-secondary-background-color);
+    --dl-popup-bg: var(--st-secondary-background-color);
+    --dl-lookup-bg: var(--st-secondary-background-color);
+    --eng-bg-sec: var(--st-secondary-background-color);
+    --eng-bg-hover: var(--st-secondary-background-color);
+    --eng-popup-bg: var(--st-secondary-background-color);
+    --dl-text: var(--st-text-color);
+    --eng-text: var(--st-text-color);
+    --dl-primary: var(--st-primary-color);
+    --eng-primary: var(--st-primary-color);
+    --dl-border: var(--st-border-color);
+    --dl-border-main: var(--st-border-color);
+    --eng-border: var(--st-border-color);
+    --dl-font-reader: var(--st-font);
+    --dl-font-ui: var(--st-font);
+    --eng-font-reader: var(--st-font);
+    --eng-font-ui: var(--st-font);
+    --dl-font-mono: var(--st-code-font);
+    --eng-font-mono: var(--st-code-font);
+    --dl-code-bg: var(--st-code-background-color);
+    --eng-code-bg: var(--st-code-background-color);
+    --dl-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --eng-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+}
+:host [data-dictionary-root] [data-dict-neutral-surface] {
+    background-color: var(--st-background-color) !important;
+}

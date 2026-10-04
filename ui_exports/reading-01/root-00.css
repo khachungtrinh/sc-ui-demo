@@ -1,0 +1,327 @@
+
+        
+.panel-reader-v2 {
+    font-size: 16px;
+    --eng-bg-main: #fdfdf8;
+    --eng-bg-sec: #ecebe3;
+    --eng-bg-sec-soft: #f1f0e9;
+    --eng-bg-sidebar: #f0f0ec;
+    --eng-dict-bg: #ecebe3;
+    --eng-dict-inner-bg: #ecebe3;
+    --eng-sidebar-dict-bg: #f0f0ec;
+    --eng-popup-bg: #ecebe3;
+    --eng-border: #d3d2ca;
+    --eng-primary: #3d3a2a;
+    --eng-reader-font: 'Source Sans', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --eng-reader-mono-font: 'SpaceMono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --eng-reader-font-size: 1rem;
+    --eng-reader-line-height: 1.6;
+    --eng-reader-code-font-size: .75rem;
+    --eng-reader-code-bg: #ecebe4;
+    --eng-reader-text: #3d3a2a;
+    --eng-reader-muted: rgba(61, 58, 42, 0.7);
+    --eng-reader-cell-padding: 8px;
+    --eng-reader-cell-padding-compact: 8px;
+    --eng-reader-id-cell-padding: 8px;
+    --eng-reader-panel-padding: 15px;
+    --eng-reader-gap: 20px;
+    --eng-reader-word-padding: 0 1px;
+    --eng-reader-glossary-word-padding: 0 2px;
+    --eng-reader-lookup-title-font-size: 1.2rem;
+    --eng-reader-lookup-badge-font-size: 0.65rem;
+    --eng-scrollbar-width: 3px;
+    --eng-scrollbar-thumb: rgba(61, 58, 42, 0.10);
+    --eng-scrollbar-thumb-hover: rgba(61, 58, 42, 0.18);
+    --eng-scrollbar-track: transparent;
+    --eng-scrollbar-radius: 999px;
+}
+
+        
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--eng-scrollbar-thumb, rgba(61, 58, 42, 0.10)) var(--eng-scrollbar-track, transparent);
+        }
+
+        ::-webkit-scrollbar {
+            width: var(--eng-scrollbar-width, 3px);
+            height: var(--eng-scrollbar-width, 3px);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--eng-scrollbar-track, transparent);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--eng-scrollbar-thumb, rgba(61, 58, 42, 0.10));
+            border-radius: var(--eng-scrollbar-radius, 999px);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--eng-scrollbar-thumb-hover, rgba(61, 58, 42, 0.18));
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+    
+
+        .panel-reader-v2,
+        .panel-reader-v2 {
+            font-family: var(--eng-reader-font);
+            font-size: var(--eng-reader-font-size);
+            line-height: var(--eng-reader-line-height);
+            background-color: var(--eng-bg-main, #fdfdf8);
+            color: var(--eng-reader-text, #3d3a2a);
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            font-weight: 400;
+            text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: auto;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 33% 1fr;
+            height: 100%;
+            gap: var(--eng-reader-gap);
+            align-items: start;
+            box-sizing: border-box;
+        }
+
+        .text-col {
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            min-width: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .dict-col {
+            /* Local En→Vi result panel lives on the main page surface. */
+            background: var(--eng-bg-main, #fdfdf8);
+            border: 1px solid #d3d2ca;
+            padding: var(--eng-reader-panel-padding);
+            overflow-y: auto;
+            border-radius: 0;
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        #english-reader-main-text table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+            border: 1px solid #d3d2ca;
+            margin-top: 0;
+        }
+
+        #english-reader-main-text td {
+            padding: var(--eng-reader-cell-padding);
+            border: 1px solid #d3d2ca;
+            vertical-align: middle;
+        }
+
+        #english-reader-main-text .id-col {
+            font-family: var(--eng-reader-mono-font);
+            font-size: var(--eng-reader-code-font-size);
+            width: 1%;
+            min-width: max-content;
+            white-space: nowrap;
+            text-align: center;
+            padding: var(--eng-reader-id-cell-padding);
+            color: inherit;
+            box-sizing: border-box;
+        }
+
+        #english-reader-main-text .content-col {
+            width: auto;
+            min-width: 0;
+            font-size: var(--eng-reader-font-size);
+            line-height: var(--eng-reader-line-height);
+            white-space: normal;
+            word-break: normal;
+            overflow-wrap: break-word;
+        }
+
+        #english-reader-main-text .eng-word {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: 0.15s;
+            padding: var(--eng-reader-word-padding);
+            display: inline;
+            color: inherit;
+        }
+
+        #english-reader-main-text .eng-word:hover,
+        #english-reader-main-text .eng-word.active,
+        #english-reader-main-text .eng-word.active-en {
+            background: var(--eng-bg-sec);
+            border-bottom: 2px solid #5d7367;
+            font-weight: 600;
+            color: #5d7367;
+        }
+
+        /* English→Vietnamese overlay inside Longman/Oxford result HTML.
+           Hover/active states intentionally do not change geometry. */
+        .dict-col .eng-sub-word {
+            cursor: pointer;
+            color: inherit;
+            background: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+            font-weight: inherit;
+            transition: color 0.15s, background-color 0.15s;
+        }
+
+        .dict-col .eng-sub-word:hover,
+        .dict-col .eng-sub-word.active-en {
+            color: #5d7367;
+            background: rgba(93, 115, 103, 0.10);
+            border: none;
+            padding: 0;
+            margin: 0;
+            font-weight: inherit;
+        }
+    
+[data-dictionary-root]{color:var(--dl-text,#3d3a2a);font-family:var(--dl-font-reader,"Source Sans Pro",sans-serif);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6);}
+.dict-layout{height:100%;display:flex;gap:12px;min-width:0}.dict-content{flex:1;min-width:0;overflow:auto}.dict-content table{width:100%;border-collapse:collapse}.dict-content td{padding:8px;vertical-align:top;border:1px solid var(--dl-border,#eaeae3)}
+[data-dict-panel]{flex:1;overflow:auto;min-width:0}.dict-left{display:flex;flex-direction:column;flex:0 0 var(--dl-dict-width,300px);max-width:40%;min-width:0;overflow:hidden}.dict-entry{padding:8px;border-bottom:1px solid var(--dl-border,#d3d2ca)}.dict-word,.pali-word,.eng-word,.eng-sub-word{cursor:pointer}.dict-active{background:var(--dl-bg-hover,#ecebe3)}.dict-popup{position:fixed;z-index:999999;padding:12px;overflow:auto;box-sizing:border-box;background:var(--dl-popup-bg,#ecebe3);color:var(--dl-text,#3d3a2a);border:1px solid var(--dl-border,#d3d2ca);box-shadow:0 4px 18px #0003}.dict-popup-pali{font-family:var(--dl-font-reader,"Source Sans","Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif);margin:0;border-radius:var(--dl-radius,3px);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6);font-weight:400;font-style:normal;text-decoration:none;text-align:left;min-width:min(20em,calc(100vw - 24px));max-width:min(550px,calc(100vw - 24px));max-height:calc(100vh - 24px);height:auto;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;pointer-events:auto}.dict-popup-english{max-height:400px}.dict-popup[hidden]{display:none}
+*{scrollbar-width:thin;scrollbar-color:#ccc transparent}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#ccc}
+
+:host [data-dictionary-root] {
+    --dl-bg-main: var(--st-background-color);
+    --dl-bg-sidebar: var(--st-background-color);
+    --dl-dict-bg: var(--st-background-color);
+    --dl-dict-inner-bg: var(--st-background-color);
+    --dl-sidebar-dict-bg: var(--st-background-color);
+    --eng-bg-main: var(--st-background-color);
+    --eng-bg-sidebar: var(--st-background-color);
+    --eng-dict-bg: var(--st-background-color);
+    --eng-dict-inner-bg: var(--st-background-color);
+    --dict-panel-surface: var(--st-background-color);
+    --dl-bg: var(--st-secondary-background-color);
+    --dl-bg-hover: var(--st-secondary-background-color);
+    --dl-popup-bg: var(--st-secondary-background-color);
+    --dl-lookup-bg: var(--st-secondary-background-color);
+    --eng-bg-sec: var(--st-secondary-background-color);
+    --eng-bg-hover: var(--st-secondary-background-color);
+    --eng-popup-bg: var(--st-secondary-background-color);
+    --dl-text: var(--st-text-color);
+    --eng-text: var(--st-text-color);
+    --dl-primary: var(--st-primary-color);
+    --eng-primary: var(--st-primary-color);
+    --dl-border: var(--st-border-color);
+    --dl-border-main: var(--st-border-color);
+    --eng-border: var(--st-border-color);
+    --dl-font-reader: var(--st-font);
+    --dl-font-ui: var(--st-font);
+    --eng-font-reader: var(--st-font);
+    --eng-font-ui: var(--st-font);
+    --dl-font-mono: var(--st-code-font);
+    --eng-font-mono: var(--st-code-font);
+    --dl-code-bg: var(--st-code-background-color);
+    --eng-code-bg: var(--st-code-background-color);
+    --dl-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --eng-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+}
+:host [data-dictionary-root] [data-dict-neutral-surface] {
+    background-color: var(--st-background-color) !important;
+}
+
+.reader-keyword-highlight {
+    background-color: #ffe066; color: inherit; font: inherit;
+    padding: 0; border-radius: 2px; pointer-events: none;
+}
+
+[data-dictionary-root] {
+    --dict-main-surface: #fdfdf8;
+    --dict-panel-surface: #fdfdf8;
+}
+[data-dictionary-root] [data-dict-panel] > .dict-entry:last-child {
+    border-bottom: 0;
+}
+[data-dictionary-root] [data-dict-panel] > .dict-entry:last-child [data-dict-terminal-wrapper] {
+    border-bottom: 0 !important;
+}
+[data-dictionary-root] [data-dict-panel] > .dict-entry:last-child [data-dict-terminal-rule] {
+    display: none;
+}
+
+
+[data-reading-root]{--reading-control-size:14px;--reading-control-height:40px;}
+[data-reading-root]{width:100%;min-width:0;color:var(--st-text-color);font-family:var(--st-font);font-size:var(--reading-control-size,14px);line-height:1.6;box-sizing:border-box}
+[data-reading-root] *{box-sizing:border-box}
+.reading-label{display:block;margin:0 0 .35rem;font-size:14px;line-height:1.6;font-weight:400}
+.reading-input,.reading-button,.reading-select{font:inherit;color:inherit;border:1px solid var(--st-border-color);border-radius:var(--st-button-radius);background:var(--st-secondary-background-color)}
+.reading-input{display:block;width:100%;min-height:var(--reading-control-height);padding:8px 12px;outline:none;resize:none}
+.reading-input:focus,.reading-select:focus{border-color:var(--st-primary-color);outline:none}
+.reading-input:disabled{opacity:.65;cursor:not-allowed}
+.reading-button{min-height:var(--reading-control-height);padding:6px 12px;display:inline-flex;justify-content:center;align-items:center;gap:6px;cursor:pointer;width:100%;line-height:1.2}
+.reading-button:hover{border-color:var(--st-primary-color);color:var(--st-primary-color)}
+.reading-button:disabled{opacity:.5;cursor:not-allowed}
+.reading-button.primary{background:var(--st-primary-color);color:white;border-color:var(--st-primary-color)}
+.reading-icon{font-family:'Material Symbols Rounded','Material Symbols Outlined';font-weight:400;font-size:20px;line-height:1;white-space:nowrap}
+.reading-select{width:100%;height:var(--reading-control-height);padding:6px 10px;cursor:pointer}
+/* Reading-only parity with st_style.checkbox_as_button_style(); native button
+   activation preserves keyboard behavior without a switch track or thumb. */
+[data-reading-root] .reading-toggle-button{display:flex;justify-content:flex-start;align-items:center;width:100%;min-width:0;min-height:var(--reading-control-height);margin:0;gap:0;padding:.45rem .75rem;border:1px solid var(--st-border-color);border-radius:2px;background:var(--st-background-color);color:color-mix(in srgb,var(--st-text-color) 70%,transparent);font:inherit;font-weight:400;line-height:1.6;text-align:left;cursor:pointer;transition:background-color .2s ease,border-color .2s ease,color .2s ease}
+[data-reading-root] .reading-toggle-button:hover:not(:disabled){background:var(--st-secondary-background-color);border-color:var(--hover-border,#b5b4ad)}
+[data-reading-root] .reading-toggle-button[aria-pressed=true]{background:var(--st-secondary-background-color);border-color:var(--st-border-color);box-shadow:0 1px 3px rgba(0,0,0,.05);color:var(--st-text-color);font-weight:500}
+[data-reading-root] .reading-toggle-button:focus-visible{outline:2px solid var(--hover-border,#b5b4ad);outline-offset:2px}
+[data-reading-root] .reading-toggle-button:disabled{opacity:.5;cursor:not-allowed}
+.reading-code{white-space:pre;overflow:auto;padding:1rem;background:var(--st-secondary-background-color);font-family:var(--st-code-font,monospace);font-size:14px;border-radius:var(--st-base-radius);margin:0}
+.reading-code-wrap{position:relative}.reading-copy{position:absolute;right:6px;top:6px;width:28px;min-height:28px;font-size:12px;border:none;background:transparent;padding:2px}
+.reading-tabs{display:flex;gap:1rem;border-bottom:1px solid var(--st-border-color);margin-bottom:1rem;overflow:auto}
+.reading-tab{border:0;background:transparent;color:inherit;white-space:nowrap;padding:8px 0;font:inherit;cursor:pointer;border-bottom:2px solid transparent;display:flex;align-items:center;gap:5px}
+.reading-tab[aria-selected=true]{border-bottom-color:var(--st-primary-color);color:var(--st-primary-color)}
+.reading-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;min-width:0}
+.reading-table-wrap{overflow:auto}.reading-table{border-collapse:collapse;width:100%;font:inherit}.reading-table td{padding:8px;vertical-align:top;white-space:pre-wrap}
+.reading-json{overflow:auto;font-family:var(--st-code-font);font-size:14px}.reading-json details{margin-left:1rem}.reading-json summary{cursor:pointer}.reading-json pre{white-space:pre-wrap;margin:0}
+.reading-error{color:var(--st-red-color,#a62727);font:inherit;white-space:pre-wrap}
+[data-reading-root] [data-dictionary-root]{font-family:var(--dl-font-reader,"Source Sans",sans-serif);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6)}
+.reading-local-warning{font-size:12px;margin:4px 0;color:var(--st-red-color,#a62727)}
+
+:host [data-dictionary-root] {
+    --dl-bg-main: var(--st-background-color);
+    --dl-bg-sidebar: var(--st-background-color);
+    --dl-dict-bg: var(--st-background-color);
+    --dl-dict-inner-bg: var(--st-background-color);
+    --dl-sidebar-dict-bg: var(--st-background-color);
+    --eng-bg-main: var(--st-background-color);
+    --eng-bg-sidebar: var(--st-background-color);
+    --eng-dict-bg: var(--st-background-color);
+    --eng-dict-inner-bg: var(--st-background-color);
+    --dict-panel-surface: var(--st-background-color);
+    --dl-bg: var(--st-secondary-background-color);
+    --dl-bg-hover: var(--st-secondary-background-color);
+    --dl-popup-bg: var(--st-secondary-background-color);
+    --dl-lookup-bg: var(--st-secondary-background-color);
+    --eng-bg-sec: var(--st-secondary-background-color);
+    --eng-bg-hover: var(--st-secondary-background-color);
+    --eng-popup-bg: var(--st-secondary-background-color);
+    --dl-text: var(--st-text-color);
+    --eng-text: var(--st-text-color);
+    --dl-primary: var(--st-primary-color);
+    --eng-primary: var(--st-primary-color);
+    --dl-border: var(--st-border-color);
+    --dl-border-main: var(--st-border-color);
+    --eng-border: var(--st-border-color);
+    --dl-font-reader: var(--st-font);
+    --dl-font-ui: var(--st-font);
+    --eng-font-reader: var(--st-font);
+    --eng-font-ui: var(--st-font);
+    --dl-font-mono: var(--st-code-font);
+    --eng-font-mono: var(--st-code-font);
+    --dl-code-bg: var(--st-code-background-color);
+    --eng-code-bg: var(--st-code-background-color);
+    --dl-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --eng-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+}
+:host [data-dictionary-root] [data-dict-neutral-surface] {
+    background-color: var(--st-background-color) !important;
+}
