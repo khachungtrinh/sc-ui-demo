@@ -1,0 +1,49 @@
+tune
+
+UI Controls
+
+collections_bookmark
+
+Đại Tạng
+
+clarify
+
+Tam Tạng
+
+library_books
+
+Đối Chiếu
+
+dialogs
+
+Tụng Đọc
+
+library_add
+
+Văn Bản
+
+cards_star
+
+Công Cụ
+
+Trạng thái tham chiếu
+
+Dữ liệu
+
+Chọn kinh
+
+quick_reference_all Đại Chánh Tạng
+
+Lọc:
+
+Thẻ:
+
+Kinh
+
+Tìm theo:
+
+search từ khóa chính:
+
+Ngữ cảnh gần:
+
+search từ khóa phụ:
