@@ -1,0 +1,18 @@
+/* DPD content semantics only. SCAPP tokens own typography and visual policy. */
+[data-dpd-root]{height:auto;min-height:0;padding:0;margin:0;}
+[data-dpd-root] [hidden]{display:none!important;}
+[data-dpd-root] .dict-layout{height:auto;align-items:flex-start;}
+[data-dpd-root] .dict-content{overflow:visible;}
+[data-dpd-root] h4{font-size:inherit;margin:.5rem 0;font-weight:600;}
+[data-dpd-root] h4:first-child,[data-dpd-root] p:first-child{margin-top:0;}
+[data-dpd-root] p{margin:.5rem 0;}
+[data-dpd-root] .dpd-controls{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0;}
+[data-dpd-root] button{font-family:UI_FONT_FAMILY;font-size:UI_FONT_SIZE;line-height:1.25;font-weight:400;height:UI_CONTROL_HEIGHT;min-height:0;border:1px solid var(--dl-border);border-radius:0;background:var(--dl-bg-main);color:var(--dl-text);padding:0 8px;cursor:pointer;box-sizing:border-box;}
+[data-dpd-root] button[aria-pressed=true],[data-dpd-root] button[aria-expanded=true]{background:var(--dl-bg);}
+[data-dpd-root] .dpd-summary button{height:auto;vertical-align:baseline;}
+[data-dpd-root] table{border-collapse:collapse;max-width:100%;}
+[data-dpd-root] th,[data-dpd-root] td{padding:var(--dl-cell-padding);vertical-align:top;text-align:left;}
+[data-dpd-root] .dict-content th{border:1px solid var(--dl-border);}
+[data-dpd-root] [data-dpd-section]{overflow-x:auto;}
+[data-dpd-root] .dict-left[hidden]{display:none;}
+[data-dpd-root] .dict-left{max-height:350px;}

@@ -1,0 +1,20 @@
+.scapp-selection-grid {position:relative;width:100%;box-sizing:border-box;color:var(--scapp-v2-text);font-family:var(--scapp-v2-font);}
+.scapp-selection-grid .grid-scroll {overflow:auto;height:100%;border:1px solid var(--scapp-v2-dataframe-border);box-sizing:border-box;}
+.scapp-selection-grid table {table-layout:fixed;border-collapse:separate;border-spacing:0;min-width:100%;font-size:var(--scapp-v2-control-font-size);}
+.scapp-selection-grid th,.scapp-selection-grid td {height:35px;box-sizing:border-box;padding:0 8px;border-right:1px solid var(--scapp-v2-dataframe-border);border-bottom:1px solid var(--scapp-v2-dataframe-border);text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:400;line-height:1.25;}
+.scapp-selection-grid th {position:sticky;top:0;z-index:1;background:var(--scapp-v2-dataframe-header-bg);user-select:none;}
+.scapp-selection-grid td {background:var(--scapp-v2-bg);}
+.scapp-selection-grid tr[aria-selected="true"] td {background:color-mix(in srgb,var(--scapp-v2-primary) 12%,var(--scapp-v2-bg));}
+.scapp-selection-grid td:focus-visible {outline:2px solid var(--scapp-v2-primary);outline-offset:-2px;}
+.scapp-selection-grid td[data-search-match] {background:var(--st-yellow-background-color);}
+.scapp-selection-grid input[type="checkbox"] {margin:0;accent-color:var(--scapp-v2-primary);width:14px;height:14px;}
+.scapp-selection-grid [data-checkbox-cell] {padding:0 5px;}
+.scapp-selection-grid .grid-tools {position:absolute;right:3px;top:3px;z-index:3;display:flex;gap:2px;opacity:0;background:var(--scapp-v2-bg);}
+.scapp-selection-grid:hover .grid-tools,.scapp-selection-grid:focus-within .grid-tools {opacity:1;}
+.scapp-selection-grid .grid-tool {display:flex;align-items:center;justify-content:center;width:27px;height:27px;padding:3px;border:0;border-radius:var(--st-button-radius);color:var(--scapp-v2-text);background:var(--scapp-v2-bg);cursor:pointer;}
+.scapp-selection-grid .grid-tool:hover {background:var(--scapp-v2-bg-secondary);}
+.scapp-selection-grid .grid-tool:focus-visible {outline:2px solid var(--scapp-v2-primary);outline-offset:-2px;}
+.scapp-selection-grid .grid-search {position:absolute;top:35px;right:3px;z-index:3;width:200px;max-width:90%;height:35px;padding:0 8px;box-sizing:border-box;background:var(--scapp-v2-bg);color:var(--scapp-v2-text);border:1px solid var(--scapp-v2-control-border);font:inherit;}
+.scapp-selection-grid .grid-resize {position:absolute;right:0;top:0;width:6px;height:100%;cursor:col-resize;}
+.scapp-selection-grid:fullscreen {height:100vh!important;background:var(--scapp-v2-bg);}
+.scapp-selection-grid:fullscreen .grid-scroll {height:100%;}

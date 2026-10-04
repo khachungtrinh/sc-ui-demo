@@ -1,0 +1,89 @@
+[data-ss-collection-root] {
+  /* Accepted SCAPP hover border has no equivalent native semantic token. */
+  --ss-hover-border: #b5b4ad;
+  color: var(--scapp-v2-text);
+  background: var(--scapp-v2-bg);
+  font-family: var(--scapp-v2-font);
+  font-size: var(--scapp-v2-content-font-size);
+  line-height: var(--scapp-v2-content-line-height);
+  font-weight: var(--scapp-v2-content-font-weight);
+  letter-spacing: normal;
+  word-spacing: normal;
+  width: 100%;
+  box-sizing: border-box;
+}
+[data-ss-collection-root] h2 { font-size: 1.5rem; font-weight: 600; line-height: 1.3; margin: 0 0 1rem; }
+[data-ss-collection-root] .ss-controls { display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; }
+[data-ss-collection-root] .ss-control-label {
+  display: block;
+  position: relative;
+  font-family: var(--scapp-v2-font);
+  font-size: var(--scapp-v2-control-font-size);
+  line-height: var(--scapp-v2-control-line-height);
+  color: var(--scapp-v2-text);
+}
+[data-ss-collection-root] .ss-select { position: relative; margin-top: .35rem; }
+[data-ss-collection-root] .ss-select > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: var(--scapp-select-text);
+  background: var(--scapp-select-background);
+  border-color: var(--scapp-select-border);
+  padding-right: 16px;
+  transition: initial;
+}
+[data-ss-collection-root] .ss-select > button:hover:not(:disabled),
+[data-ss-collection-root] .ss-select > button:focus-visible {
+  border-color: var(--scapp-select-hover-border);
+  outline: none;
+  box-shadow: none;
+}
+[data-ss-collection-root] .ss-select-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
+[data-ss-collection-root] .ss-chevron { width: 7px; height: 7px; border-right: 1px solid; border-bottom: 1px solid; transform: rotate(45deg); margin-top: -4px; flex: none; }
+[data-ss-collection-root] .ss-options {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  z-index: 100;
+  max-height: 300px;
+  overflow: auto;
+  color: var(--scapp-select-text);
+  background: var(--scapp-select-menu-background);
+  border: 1px solid var(--scapp-select-border);
+  box-shadow: 0 4px 12px #0002;
+}
+[data-ss-collection-root] .ss-options button { display: block; width: 100%; text-align: left; cursor: pointer; border-radius: 0; }
+[data-ss-collection-root] .ss-options button:hover,
+[data-ss-collection-root] .ss-options button:focus,
+[data-ss-collection-root] .ss-options button[aria-selected="true"] { background: var(--scapp-select-active-background); outline: none; }
+[data-ss-collection-root] .ss-options button[aria-selected="true"] { font-weight: 600; }
+[data-ss-collection-root] .ss-table-viewport:focus-visible { outline: 1px solid var(--ss-hover-border); outline-offset: 2px; }
+[data-ss-collection-root] .ss-statistics { font-size: .875rem; margin: .6rem 0; }
+[data-ss-collection-root] .ss-empty { padding: 1rem; background: #fff8db; border-radius: .5rem; }
+[data-ss-collection-root] .ss-table-viewport { overflow-x: auto; width: 100%; }
+[data-ss-collection-root] [hidden] { display: none; }
+[data-ss-collection-root] table[data-scapp-table] {
+  background: transparent;
+  width: 100%;
+  margin: 0;
+}
+[data-ss-collection-root] caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+[data-ss-collection-root] th, [data-ss-collection-root] td {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+[data-ss-collection-root] table[data-scapp-table] thead th { background: transparent; white-space: nowrap; }
+[data-ss-collection-root] .ss-row-index { font-weight: 400; color: var(--scapp-v2-muted-text); }
+[data-ss-collection-root] .ss-uid { color: var(--st-violet-color, #8b5cf6); }
+[data-ss-collection-root] a { color: var(--st-link-color, #0068c9); text-decoration: underline; }
+[data-ss-collection-root] a.ss-uid { color: var(--st-violet-color, #8b5cf6); }
+@media (max-width: 600px) { [data-ss-collection-root] .ss-controls { grid-template-columns: 1fr; gap: .6rem; } }
