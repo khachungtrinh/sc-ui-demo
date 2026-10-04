@@ -1,0 +1,236 @@
+[
+  {
+    "page": "controls",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 0
+  },
+  {
+    "page": "dt",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "dt",
+    "scenario": "Trích đoạn",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "dt",
+    "scenario": "Không có kết quả",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "dt",
+    "scenario": "Lỗi tìm kiếm",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "dt",
+    "scenario": "Taisho",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "sc",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "sc",
+    "scenario": "API SC",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "sc",
+    "scenario": "Từ điển",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "sc",
+    "scenario": "Sujato",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "sc",
+    "scenario": "LCDP",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "sc",
+    "scenario": "Không có kết quả",
+    "errors": [],
+    "v2_elements": 0
+  },
+  {
+    "page": "ss",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "ss",
+    "scenario": "Cây kinh",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "ss",
+    "scenario": "Bảng song song",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "ss",
+    "scenario": "Tuyển tập",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "ss",
+    "scenario": "Bảng nội dung",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "ss",
+    "scenario": "Từ điển",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "ss",
+    "scenario": "Taisho",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "ss",
+    "scenario": "Bảng rỗng",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "Tụng / IPA",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "td",
+    "scenario": "Anh–Việt",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "Từ điển",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "DPD",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "Mục từ",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "Bảng Anh",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "Văn bản Anh",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "LCDP",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "td",
+    "scenario": "Sujato",
+    "errors": [],
+    "v2_elements": 2
+  },
+  {
+    "page": "td",
+    "scenario": "Kết quả từ điển",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "reading",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 4
+  },
+  {
+    "page": "reading",
+    "scenario": "Đọc tài liệu",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "reading",
+    "scenario": "AI workspace",
+    "errors": [],
+    "v2_elements": 10
+  },
+  {
+    "page": "reading",
+    "scenario": "Glossary",
+    "errors": [],
+    "v2_elements": 1
+  },
+  {
+    "page": "tools",
+    "scenario": "default",
+    "errors": [],
+    "v2_elements": 0
+  },
+  {
+    "page": "tools",
+    "scenario": "Quản lý tệp",
+    "errors": [],
+    "v2_elements": 0
+  },
+  {
+    "page": "tools",
+    "scenario": "Ghi chú",
+    "errors": [],
+    "v2_elements": 0
+  },
+  {
+    "page": "tools",
+    "scenario": "Hướng dẫn",
+    "errors": [],
+    "v2_elements": 0
+  }
+]

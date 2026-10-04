@@ -1,0 +1,370 @@
+[
+  {
+    "widget": "badge",
+    "source_examples": [
+      "td.py:745",
+      "td.py:747",
+      "td.py:749",
+      "td.py:751",
+      "page_reading.py:1735",
+      "page_reading.py:1738",
+      "tl.py:422"
+    ],
+    "occurrences_in_audit": 7,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "button",
+    "source_examples": [
+      "dt.py:778",
+      "dt.py:467",
+      "dt.py:462",
+      "dt.py:465",
+      "dt.py:1164",
+      "sc.py:185",
+      "ss.py:639",
+      "td.py:276"
+    ],
+    "occurrences_in_audit": 105,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "chat_input",
+    "source_examples": [
+      "tl.py:171",
+      "new_components.py:1119"
+    ],
+    "occurrences_in_audit": 2,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "chat_message",
+    "source_examples": [
+      "tl.py:186",
+      "new_components.py:1140"
+    ],
+    "occurrences_in_audit": 2,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "code",
+    "source_examples": [
+      "dt.py:960",
+      "sc.py:466",
+      "td.py:653",
+      "td.py:755",
+      "page_reading.py:1762",
+      "tl.py:378",
+      "tl.py:376",
+      "new_components.py:661"
+    ],
+    "occurrences_in_audit": 15,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "columns",
+    "source_examples": [
+      "dt.py:629",
+      "dt.py:459",
+      "dt.py:1035",
+      "dt.py:1040",
+      "dt.py:1109",
+      "dt.py:1118",
+      "sc.py:67",
+      "sc.py:92"
+    ],
+    "occurrences_in_audit": 110,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "container",
+    "source_examples": [
+      "dt.py:461",
+      "dt.py:464",
+      "ss.py:745",
+      "ss.py:895",
+      "ss.py:1264",
+      "ss.py:1271",
+      "td.py:664",
+      "td.py:908"
+    ],
+    "occurrences_in_audit": 34,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "data_editor",
+    "source_examples": [
+      "page_reading.py:2289",
+      "page_reading.py:2461",
+      "tl.py:614",
+      "tl.py:583",
+      "new_td_utils.py:83",
+      "new_components_tl.py:102",
+      "new_reading_glossary_ui.py:20"
+    ],
+    "occurrences_in_audit": 7,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "dataframe",
+    "source_examples": [
+      "tl.py:1435",
+      "tl.py:1335",
+      "new_dict_lookup_eng.py:2343"
+    ],
+    "occurrences_in_audit": 3,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "download_button",
+    "source_examples": [
+      "dt.py:319",
+      "tl.py:292",
+      "tl.py:644",
+      "tl.py:741",
+      "new_components.py:2627",
+      "new_components.py:2664",
+      "new_components_tl.py:337",
+      "new_tl_tools.py:260"
+    ],
+    "occurrences_in_audit": 8,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Download button replaced by disabled native button; grid export disabled"
+  },
+  {
+    "widget": "expander",
+    "source_examples": [
+      "dt.py:958",
+      "td.py:644",
+      "tl.py:1669",
+      "tl.py:1693",
+      "tl.py:1723",
+      "tl.py:1743",
+      "tl.py:1774",
+      "tl.py:1792"
+    ],
+    "occurrences_in_audit": 32,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "file_uploader",
+    "source_examples": [
+      "dt.py:764",
+      "page_reading.py:755",
+      "tl.py:658",
+      "new_components_tl.py:215"
+    ],
+    "occurrences_in_audit": 4,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Disabled upload; no reading or persistence"
+  },
+  {
+    "widget": "json",
+    "source_examples": [
+      "sc.py:210",
+      "sc.py:197",
+      "sc.py:208",
+      "page_reading.py:2315",
+      "page_reading.py:1156",
+      "new_reading_workspace_v2.py:260"
+    ],
+    "occurrences_in_audit": 6,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "link_button",
+    "source_examples": [
+      "td.py:358"
+    ],
+    "occurrences_in_audit": 1,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "menu_button",
+    "source_examples": [
+      "td.py:517",
+      "page_reading.py:2393",
+      "tl.py:1531",
+      "tl.py:1540",
+      "tl.py:1555"
+    ],
+    "occurrences_in_audit": 5,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "multiselect",
+    "source_examples": [
+      "dt.py:529"
+    ],
+    "occurrences_in_audit": 1,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "number_input",
+    "source_examples": [
+      "sc.py:339",
+      "td.py:1044",
+      "page_reading.py:1625",
+      "tl.py:563",
+      "new_dt_crop_lab.py:451"
+    ],
+    "occurrences_in_audit": 5,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "pills",
+    "source_examples": [
+      "tl.py:148",
+      "tl.py:353",
+      "tl.py:201",
+      "tl.py:1148",
+      "new_dict_lookup_eng.py:2024",
+      "new_dict_lookup_eng.py:2037",
+      "new_dict_lookup_eng.py:2210",
+      "new_dict_lookup_eng.py:2406"
+    ],
+    "occurrences_in_audit": 8,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "popover",
+    "source_examples": [
+      "tl.py:1097"
+    ],
+    "occurrences_in_audit": 1,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "radio",
+    "source_examples": [
+      "dt.py:657",
+      "new_components.py:1032",
+      "new_components.py:1006",
+      "new_components.py:1017"
+    ],
+    "occurrences_in_audit": 4,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "segmented_control",
+    "source_examples": [
+      "ss.py:1065",
+      "ss.py:1090",
+      "ss.py:1103",
+      "ss.py:1111",
+      "ss.py:1174",
+      "ss.py:1191",
+      "new_dict_lookup_pli.py:169"
+    ],
+    "occurrences_in_audit": 7,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "selectbox",
+    "source_examples": [
+      "dt.py:597",
+      "dt.py:688",
+      "dt.py:720",
+      "dt.py:728",
+      "dt.py:737",
+      "dt.py:746",
+      "sc.py:95",
+      "sc.py:122"
+    ],
+    "occurrences_in_audit": 95,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "table",
+    "source_examples": [
+      "ss.py:620",
+      "page_reading.py:2246",
+      "page_reading.py:2487",
+      "new_ss_collection_table_v2.py:56",
+      "new_reading_workspace_v2.py:263"
+    ],
+    "occurrences_in_audit": 5,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "tabs",
+    "source_examples": [
+      "page_reading.py:2215",
+      "page_reading.py:2338",
+      "tl.py:381",
+      "new_dt_crop_lab.py:578"
+    ],
+    "occurrences_in_audit": 4,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "text_area",
+    "source_examples": [
+      "dt.py:680",
+      "dt.py:702",
+      "td.py:480",
+      "td.py:758",
+      "td.py:966",
+      "td.py:887",
+      "page_reading.py:764",
+      "page_reading.py:911"
+    ],
+    "occurrences_in_audit": 37,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "text_input",
+    "source_examples": [
+      "dt.py:670",
+      "dt.py:676",
+      "dt.py:697",
+      "dt.py:755",
+      "sc.py:364",
+      "sc.py:110",
+      "sc.py:113",
+      "ss.py:766"
+    ],
+    "occurrences_in_audit": 52,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  },
+  {
+    "widget": "toggle",
+    "source_examples": [
+      "dt.py:631",
+      "dt.py:640",
+      "ss.py:678",
+      "ss.py:689",
+      "ss.py:706",
+      "td.py:249",
+      "td.py:589",
+      "td.py:596"
+    ],
+    "occurrences_in_audit": 28,
+    "reference": "UI Controls and page-specific clusters",
+    "difference": "Representative state only"
+  }
+]

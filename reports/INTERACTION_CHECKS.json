@@ -1,0 +1,92 @@
+{
+  "browser": "Chromium 143.0.7499.0",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "cases": [
+    {
+      "case": "narrow-reading",
+      "scenario": "900px",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 25465,
+          "text_chars": 17463,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "interactions": [
+    {
+      "test": "DT full-text local page 2",
+      "status": "PASS",
+      "evidence": "Recovered prior interaction-validation.log; not repeated."
+    },
+    {
+      "test": "DT held-result local page 2",
+      "status": "PASS"
+    },
+    {
+      "test": "DT selection bridge updates selected title",
+      "status": "PASS"
+    },
+    {
+      "test": "SC prepared-page request / server fixture page 2",
+      "status": "PASS"
+    },
+    {
+      "test": "SS collection local switch",
+      "status": "PASS"
+    },
+    {
+      "test": "SS mode menu preserves fixture rows",
+      "status": "PASS"
+    },
+    {
+      "test": "SS topic selection and load closes readlist",
+      "status": "PASS"
+    },
+    {
+      "test": "Sutta tree selection bridge",
+      "status": "PASS"
+    },
+    {
+      "test": "Taisho local navigation / paired roots",
+      "status": "PASS"
+    },
+    {
+      "test": "Pāli local dictionary click",
+      "status": "PASS"
+    },
+    {
+      "test": "Chanting click publishes to sidebar",
+      "status": "PASS"
+    },
+    {
+      "test": "DPD section expansion",
+      "status": "PASS"
+    },
+    {
+      "test": "Reading editor checkpoint + command bridge",
+      "status": "PASS"
+    },
+    {
+      "test": "Reading original/processed tab request",
+      "status": "PASS"
+    },
+    {
+      "test": "Reading English dictionary",
+      "status": "PASS"
+    }
+  ]
+}

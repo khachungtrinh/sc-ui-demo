@@ -1,0 +1,24 @@
+page,cluster,production_source,reference,renderer,fixture,status
+DT,Bộ dữ liệu / lọc / tìm kiếm,"dt.py:597–646,1035–1132",reference_pages/dt.py,native + draw_line_dt,synthetic HITS,adapted; backend/data tools excluded
+DT,Kết quả / phân trang / chọn bài,new_result_list_v2.py,reference_pages/dt.py,direct v2,HITS,mounted
+DT,Toàn văn / trích đoạn / highlight,new_dt_full_text_v2.py; new_dt_snippets_v2.py,reference_pages/dt.py,extracted decorators only,TEXT,mounted
+DT/SS,Taisho navigation/reader,new_taisho_reader_v2.py,presentation.taisho,direct v2,TAISHO,mounted
+SC,Online/offline search controls,"sc.py:67–131,248–281",reference_pages/sc.py,native skeleton,fixed modes/options,adapted; API/Local toggles displayed disabled; scenario picker selects mode
+SC,Prepared results / pagination / dictionaries,new_sc_prepared_page_v2.py; new_sc_show_offline.py; new_sc_show_online.py,reference_pages/sc.py; reference_native.py,extracted presentation,PI/EN/VI/lookup,mounted; node content fixture-backed
+SS,Sidebar / parallel columns / segmented controls,"ss.py:671–714,1057–1118",reference_pages/ss.py,native skeleton,fixture UID/translations,adapted representative
+SS,All-collection table / menus,new_ss_collection_table_v2.py,reference_pages/ss.py,extracted corpus loader only,collection_resource,mounted; auto widths unchanged; hrefs absent in fixture
+SS,Content and table,new_ss_content_v2.py,reference_pages/ss.py,direct v2,HTML/TABLE/VI,mounted
+SS,Readlist 4-column selector / load,ss.py:516–652,reference_readlist.py,adapted presentation + original topic v2,READLISTS,"mounted; persistence removed, no-selection load disabled"
+SS,Sutta tree,new_sutta_tree_v2.py,reference_pages/ss.py,direct v2,two fixture chapters,mounted
+TD,Modes / UID navigation,td.py:247–300,reference_pages/td.py,native skeleton,fixed UID,adapted; audio/AI processing excluded
+TD,Pāli / chanting / panel / dictionaries,new_pali_reader_v2.py; new_chanting_reader_v2.py; new_panel_reader_v2.py; new_dictionary_view_v2.py,presentation.py,direct/extracted prepared mount,PI/EN/lookup,mounted
+TD/SC,LCDP / full dictionary,new_lcdp_reader_v2.py; new_full_dictionary_reader_v2.py,presentation.py,extracted assets / prepared fixture contract,HTML/lookup,mounted; no provider backend
+TD,DPD display,new_dpd_reader_v2.py,presentation.dpd,original build_dpd_html/CSS/JS; fixture mount,dpd_result,mounted; no DB or API contract package
+TD,Entry / English data,new_dictionary_entry_v2.py; new_english_data_reader_v2.py,presentation.py,"direct payload/CSS/JS, wrapper bypass",entry/table/text,mounted; original feature names absent in config
+TD,Dictionary held results,new_result_list_v2.py,reference_pages/td.py,direct v2,three tuples,mounted
+Reading,Intake / project panel,page_reading.py:890–1015,reference_pages/reading.py,original ReadingUI controls + extracted native columns,TEXT/mock project names,mounted; no project files
+Reading,Processed/original / editor / translation,"page_reading.py:1555–1640,2215–2490; new_reading_workspace_v2.py",reference_pages/reading.py,original v2 assets/state protocol + fixture resource,TEXT/EN/VI,mounted; project/AI/OCR omitted
+Reading,Glossary editor,"page_reading.py:2289,2461",reference_pages/reading.py,native representative,two fixture terms,adapted
+Tools,Readlist edit/create / normalize,tl.py:345–455,reference_pages/tools.py,native representative,synthetic JSON,adapted; no files written
+Tools,File actions / popover / notes / help,"tl.py:134–175,1097–1110,1669+",reference_pages/tools.py,native representative,synthetic file rows,adapted; no deletion/download/media operations
+UI Controls,Native gallery,SOURCE_AUDIT.json,reference_pages/controls.py,native Streamlit,synthetic values,reference-only page; uploader/download inactive

@@ -1,0 +1,152 @@
+[
+  {
+    "module": "new_result_list_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_dt_snippets_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_dt_full_text_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_dictionary_entry_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_dictionary_surface_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_dictionary_view_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_english_data_reader_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_full_dictionary_reader_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_lcdp_reader_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_dpd_reader_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_pali_reader_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_panel_reader_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_chanting_reader_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_taisho_reader_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_sc_prepared_page_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_ss_collection_table_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_ss_content_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_reading_workspace_v2.py",
+    "mode": "extracted",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_readlist_topics_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_sutta_tree_v2.py",
+    "mode": "direct",
+    "validation": "39-case real Chromium baseline evidence + targeted interaction report",
+    "backend": "fixture input only"
+  },
+  {
+    "module": "new_pagination.py",
+    "mode": "excluded",
+    "reason": "Invisible scroll infrastructure; reader-owned pagination/scroll remains in original assets."
+  },
+  {
+    "module": "anki_shortcuts.py",
+    "mode": "excluded",
+    "reason": "Invisible keyboard bridge; Anki lifecycle/storage outside scope."
+  },
+  {
+    "module": "anki_web.py",
+    "mode": "excluded",
+    "reason": "Anki media/package display not a selected core reference cluster; excludes package/media/storage behavior."
+  },
+  {
+    "module": "new_components.py:sidebar bridges",
+    "mode": "excluded",
+    "reason": "Parent DOM/sidebar/key handlers not copied; native sidebar remains. Floating glossary/notes dialogs not reproduced."
+  },
+  {
+    "module": "new_components.py:inject_translator",
+    "mode": "excluded",
+    "reason": "External Google Translate injection excluded."
+  },
+  {
+    "module": "media_wave/pdf/vocab/anki assets",
+    "mode": "excluded",
+    "reason": "Audio/video/PDF/Vocab/Anki media variants not mounted in this reference. No fabricated static replacement claimed."
+  }
+]

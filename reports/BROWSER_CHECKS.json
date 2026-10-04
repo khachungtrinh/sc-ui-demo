@@ -1,0 +1,879 @@
+{
+  "browser": "Chromium 143.0.7499.0",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "cases": [
+    {
+      "case": "controls",
+      "scenario": "default",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": []
+    },
+    {
+      "case": "dt-00",
+      "scenario": "Kết quả / toàn văn",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 4038,
+          "text_chars": 1809,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2675,
+          "text_chars": 1995,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "dt-01",
+      "scenario": "Trích đoạn",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 4038,
+          "text_chars": 1809,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2114,
+          "text_chars": 1637,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "dt-02",
+      "scenario": "Không có kết quả",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2675,
+          "text_chars": 1995,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "dt-03",
+      "scenario": "Lỗi tìm kiếm",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2675,
+          "text_chars": 1995,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "dt-04",
+      "scenario": "Taisho",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6776,
+          "text_chars": 5112,
+          "style": {
+            "background": "#f0f0ec",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6714,
+          "text_chars": 6546,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "sc-00",
+      "scenario": "Local Data",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 7408,
+          "text_chars": 5648,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "sc-01",
+      "scenario": "API SC",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 8454,
+          "text_chars": 5896,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "sc-02",
+      "scenario": "Từ điển",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 10116,
+          "text_chars": 9801,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "sc-03",
+      "scenario": "Sujato",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2610,
+          "text_chars": 2274,
+          "style": {
+            "background": "#f0f0ec",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 10043,
+          "text_chars": 9677,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "sc-04",
+      "scenario": "LCDP",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 11958,
+          "text_chars": 10459,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "sc-05",
+      "scenario": "Không có kết quả",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": []
+    },
+    {
+      "case": "ss-00",
+      "scenario": "Đối chiếu",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3443,
+          "text_chars": 3228,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3914,
+          "text_chars": 3715,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-01",
+      "scenario": "Cây kinh",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 5663,
+          "text_chars": 5438,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3443,
+          "text_chars": 3228,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-02",
+      "scenario": "Bảng song song",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 14368,
+          "text_chars": 11764,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-03",
+      "scenario": "Tuyển tập",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 11641,
+          "text_chars": 8812,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-04",
+      "scenario": "Bảng nội dung",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3443,
+          "text_chars": 3228,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 4683,
+          "text_chars": 4300,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-05",
+      "scenario": "Từ điển",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 10650,
+          "text_chars": 10237,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-06",
+      "scenario": "Taisho",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6776,
+          "text_chars": 5112,
+          "style": {
+            "background": "#f0f0ec",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6714,
+          "text_chars": 6546,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "ss-07",
+      "scenario": "Bảng rỗng",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 12989,
+          "text_chars": 10985,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-00",
+      "scenario": "Pāli",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 16598,
+          "text_chars": 12136,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-01",
+      "scenario": "Tụng / IPA",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2623,
+          "text_chars": 2282,
+          "style": {
+            "background": "#f0f0ec",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 17203,
+          "text_chars": 10899,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-02",
+      "scenario": "Anh–Việt",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 18424,
+          "text_chars": 11371,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-03",
+      "scenario": "Từ điển",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 10650,
+          "text_chars": 10237,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-04",
+      "scenario": "DPD",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 20313,
+          "text_chars": 15358,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-05",
+      "scenario": "Mục từ",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3224,
+          "text_chars": 2750,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-06",
+      "scenario": "Bảng Anh",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3272,
+          "text_chars": 2835,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-07",
+      "scenario": "Văn bản Anh",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 3192,
+          "text_chars": 2832,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-08",
+      "scenario": "LCDP",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 11958,
+          "text_chars": 10459,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-09",
+      "scenario": "Sujato",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2610,
+          "text_chars": 2274,
+          "style": {
+            "background": "#f0f0ec",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 10043,
+          "text_chars": 9677,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "td-10",
+      "scenario": "Kết quả từ điển",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 2071,
+          "text_chars": 1378,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "reading-00",
+      "scenario": "Nhập dữ liệu",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6493,
+          "text_chars": 6275,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6510,
+          "text_chars": 6304,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6505,
+          "text_chars": 6275,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6507,
+          "text_chars": 6288,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "reading-01",
+      "scenario": "Đọc tài liệu",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 24919,
+          "text_chars": 17399,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "reading-02",
+      "scenario": "AI workspace",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6461,
+          "text_chars": 6275,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6505,
+          "text_chars": 6291,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6504,
+          "text_chars": 6296,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6497,
+          "text_chars": 6296,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6497,
+          "text_chars": 6299,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 8162,
+          "text_chars": 7830,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6527,
+          "text_chars": 6292,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 6449,
+          "text_chars": 6292,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 24545,
+          "text_chars": 17355,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        },
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 7527,
+          "text_chars": 7283,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "reading-03",
+      "scenario": "Glossary",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div data-testid=\"stBidiComponentIsolated\" class=\"st-emotion-cache-uwwqev epzkg1s1\"></div>",
+          "html_bytes": 7185,
+          "text_chars": 6811,
+          "style": {
+            "background": "#fdfdf8",
+            "secondary": "#ecebe3",
+            "text": "#3d3a2a"
+          }
+        }
+      ]
+    },
+    {
+      "case": "tools-00",
+      "scenario": "Danh sách đọc",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": []
+    },
+    {
+      "case": "tools-01",
+      "scenario": "Quản lý tệp",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": []
+    },
+    {
+      "case": "tools-02",
+      "scenario": "Ghi chú",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": [
+        {
+          "host": "<div></div>",
+          "html_bytes": 1803,
+          "text_chars": 1563,
+          "style": {
+            "background": "",
+            "secondary": "",
+            "text": ""
+          }
+        }
+      ]
+    },
+    {
+      "case": "tools-03",
+      "scenario": "Hướng dẫn",
+      "exceptions": 0,
+      "javascript_errors": [],
+      "shadow_roots": []
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "interactions": []
+}

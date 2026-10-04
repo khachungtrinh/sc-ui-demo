@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "runtime_python_files_parsed": 53,
+  "production_backend_imports": [],
+  "runtime_filesystem_mutation_calls": [],
+  "excluded_sensitive_file_types": "not included",
+  "fixtures": "synthetic authored data; no production datasets copied",
+  "network_evidence": "Frozen BROWSER_CHECKS.json: no external requests observed in 39 scenarios",
+  "limits": "Static selected-call scan and observed scenarios, not a formal security audit. Original public navigation/clipboard/browser-local UI storage are retained. Framework caches/logging are not SCAPP persistence."
+}
