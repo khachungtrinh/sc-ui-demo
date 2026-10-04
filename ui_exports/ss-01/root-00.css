@@ -1,0 +1,135 @@
+[data-sutta-tree-v2] {
+    /* Native Streamlit 1.64 theme semantics. */
+    --scapp-v2-bg: var(--st-background-color);
+    --scapp-v2-bg-secondary: var(--st-secondary-background-color);
+    --scapp-v2-text: var(--st-text-color);
+    --scapp-v2-muted-text: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --scapp-v2-border: var(--st-border-color);
+    --scapp-v2-control-border: var(--st-widget-border-color, var(--st-border-color));
+    --scapp-v2-primary: var(--st-primary-color);
+    --scapp-v2-font: var(--st-font);
+    --scapp-v2-code-font: var(--st-code-font);
+    --scapp-v2-code-bg: var(--st-code-background-color);
+    --scapp-v2-base-radius: var(--st-base-radius);
+    --scapp-v2-button-radius: var(--st-button-radius);
+    --scapp-v2-dataframe-border: var(--st-dataframe-border-color, var(--st-border-color));
+    --scapp-v2-dataframe-header-bg: var(--st-dataframe-header-background-color, var(--st-secondary-background-color));
+
+    /* Canonical SCAPP control metrics from st_style.py. */
+    --scapp-v2-control-font-size: 14px;
+    --scapp-v2-control-height: 40px;
+
+    /* Components-v2 shared control geometry. */
+    --scapp-v2-control-line-height: 1.25;
+    --scapp-v2-control-padding-x: 12px;
+    --scapp-v2-control-option-min-height: 2.2rem;
+    --scapp-v2-control-option-padding-y: .4rem;
+    --scapp-v2-toggle-radius: 2px;
+    --scapp-v2-checked-font-weight: 500;
+    --scapp-v2-disabled-opacity: .45;
+
+    /* Canonical content/table metrics from assets_style.py. */
+    --scapp-v2-content-font-size: 1rem;
+    --scapp-v2-content-line-height: 1.6;
+    --scapp-v2-content-font-weight: 400;
+    --scapp-v2-content-letter-spacing: normal;
+    --scapp-v2-content-word-spacing: normal;
+    --scapp-v2-table-cell-padding: 8px;
+    --scapp-v2-panel-padding: 15px;
+    --scapp-v2-panel-gap: 20px;
+    --scapp-v2-code-font-size: .75rem;
+    --scapp-v2-segment-id-width: 60px;
+}
+
+/* Shared single-line control contract. */
+[data-sutta-tree-v2] [data-scapp-control="button"],
+[data-sutta-tree-v2] [data-scapp-control="select"],
+[data-sutta-tree-v2] [data-scapp-control="input"],
+[data-sutta-tree-v2] [data-scapp-control="toggle"] {
+    box-sizing: border-box;
+    height: var(--scapp-v2-control-height);
+    min-height: var(--scapp-v2-control-height);
+    border: 1px solid var(--scapp-v2-control-border);
+    color: var(--scapp-v2-text);
+    background: var(--scapp-v2-bg);
+    font-family: var(--scapp-v2-font);
+    font-size: var(--scapp-v2-control-font-size);
+    font-weight: 400;
+    line-height: var(--scapp-v2-control-line-height);
+    transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+[data-sutta-tree-v2] [data-scapp-control="button"],
+[data-sutta-tree-v2] [data-scapp-control="toggle"] {
+    padding: 0 var(--scapp-v2-control-padding-x);
+    border-radius: var(--scapp-v2-button-radius);
+    cursor: pointer;
+}
+
+[data-sutta-tree-v2] [data-scapp-control="select"],
+[data-sutta-tree-v2] [data-scapp-control="input"] {
+    padding: 0 var(--scapp-v2-control-padding-x);
+    border-radius: var(--scapp-v2-base-radius);
+}
+
+[data-sutta-tree-v2] [data-scapp-control="toggle"] {
+    border-radius: var(--scapp-v2-toggle-radius);
+    color: var(--scapp-v2-muted-text);
+}
+
+[data-sutta-tree-v2] [data-scapp-control="toggle"][aria-pressed="true"] {
+    background: var(--scapp-v2-bg-secondary);
+    color: var(--scapp-v2-text);
+    font-weight: var(--scapp-v2-checked-font-weight);
+}
+
+[data-sutta-tree-v2] [data-scapp-control="button"]:hover:not(:disabled),
+[data-sutta-tree-v2] [data-scapp-control="toggle"]:hover:not(:disabled),
+[data-sutta-tree-v2] [data-scapp-control="select"]:hover:not(:disabled),
+[data-sutta-tree-v2] [data-scapp-control="input"]:hover:not(:disabled) {
+    background: var(--scapp-v2-bg-secondary);
+}
+
+[data-sutta-tree-v2] [data-scapp-control="button"]:focus-visible,
+[data-sutta-tree-v2] [data-scapp-control="select"]:focus-visible,
+[data-sutta-tree-v2] [data-scapp-control="input"]:focus-visible,
+[data-sutta-tree-v2] [data-scapp-control="toggle"]:focus-visible {
+    outline: 2px solid var(--scapp-v2-primary);
+    outline-offset: 1px;
+}
+
+[data-sutta-tree-v2] [data-scapp-control="button"]:disabled,
+[data-sutta-tree-v2] [data-scapp-control="select"]:disabled,
+[data-sutta-tree-v2] [data-scapp-control="input"]:disabled,
+[data-sutta-tree-v2] [data-scapp-control="toggle"]:disabled {
+    opacity: var(--scapp-v2-disabled-opacity);
+    cursor: default;
+}
+
+[data-sutta-tree-v2] [data-scapp-option] {
+    box-sizing: border-box;
+    min-height: var(--scapp-v2-control-option-min-height);
+    padding: var(--scapp-v2-control-option-padding-y) var(--scapp-v2-control-padding-x);
+    border: 0;
+    color: var(--scapp-v2-text);
+    background: transparent;
+    font-family: var(--scapp-v2-font);
+    font-size: var(--scapp-v2-control-font-size);
+    font-weight: 400;
+    line-height: var(--scapp-v2-control-line-height);
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+[data-sutta-tree-v2] [data-scapp-option]:hover,
+[data-sutta-tree-v2] [data-scapp-option]:focus-visible,
+[data-sutta-tree-v2] [data-scapp-option][aria-selected="true"] {
+    background: var(--scapp-v2-bg-secondary);
+}
+
+[data-sutta-tree-v2] [data-scapp-option]:focus-visible {
+    outline: 2px solid var(--scapp-v2-primary);
+    outline-offset: -2px;
+}
+[data-sutta-tree-v2] {display:grid;gap:1rem;width:100%;box-sizing:border-box;}
+[data-sutta-tree-v2] select {width:100%;}

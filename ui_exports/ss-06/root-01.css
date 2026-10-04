@@ -1,0 +1,63 @@
+[data-taisho-root] {
+    /* Native Streamlit 1.64 theme semantics. */
+    --scapp-v2-bg: var(--st-background-color);
+    --scapp-v2-bg-secondary: var(--st-secondary-background-color);
+    --scapp-v2-text: var(--st-text-color);
+    --scapp-v2-muted-text: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --scapp-v2-border: var(--st-border-color);
+    --scapp-v2-control-border: var(--st-widget-border-color, var(--st-border-color));
+    --scapp-v2-primary: var(--st-primary-color);
+    --scapp-v2-font: var(--st-font);
+    --scapp-v2-code-font: var(--st-code-font);
+    --scapp-v2-code-bg: var(--st-code-background-color);
+    --scapp-v2-base-radius: var(--st-base-radius);
+    --scapp-v2-button-radius: var(--st-button-radius);
+    --scapp-v2-dataframe-border: var(--st-dataframe-border-color, var(--st-border-color));
+    --scapp-v2-dataframe-header-bg: var(--st-dataframe-header-background-color, var(--st-secondary-background-color));
+
+    /* Canonical SCAPP control metrics from st_style.py. */
+    --scapp-v2-control-font-size: 14px;
+    --scapp-v2-control-height: 40px;
+
+    /* Components-v2 shared control geometry. */
+    --scapp-v2-control-line-height: 1.25;
+    --scapp-v2-control-padding-x: 12px;
+    --scapp-v2-control-option-min-height: 2.2rem;
+    --scapp-v2-control-option-padding-y: .4rem;
+    --scapp-v2-toggle-radius: 2px;
+    --scapp-v2-checked-font-weight: 500;
+    --scapp-v2-disabled-opacity: .45;
+
+    /* Canonical content/table metrics from assets_style.py. */
+    --scapp-v2-content-font-size: 1rem;
+    --scapp-v2-content-line-height: 1.6;
+    --scapp-v2-content-font-weight: 400;
+    --scapp-v2-content-letter-spacing: normal;
+    --scapp-v2-content-word-spacing: normal;
+    --scapp-v2-table-cell-padding: 8px;
+    --scapp-v2-panel-padding: 15px;
+    --scapp-v2-panel-gap: 20px;
+    --scapp-v2-code-font-size: .75rem;
+    --scapp-v2-segment-id-width: 60px;
+}
+
+[data-taisho-root]{color:var(--text-color,#3d3a2a);box-sizing:border-box;}
+/* Reader typography consumes canonical content metrics through the adapter. */
+.taisho-content{height:100%;white-space:pre-wrap;overflow:auto;border:1px solid var(--border-color,#eaeae3);padding:1rem;border-radius:0;box-sizing:border-box;font-family:var(--scapp-v2-font);font-size:var(--scapp-v2-content-font-size);line-height:var(--scapp-v2-content-line-height);}
+/* Navigation consumes canonical control metrics; layout remains local. */
+.taisho-navigation{width:100%;min-width:0;font-family:var(--scapp-v2-font);font-size:var(--scapp-v2-control-font-size);line-height:var(--scapp-v2-control-line-height);}
+.taisho-select{position:relative;margin-bottom:8px;}
+.taisho-select>button{width:100%;height:var(--scapp-v2-control-height);display:flex;align-items:center;gap:10px;background:#ecebe3;border:1px solid #d3d2ca;border-radius:0;padding:0 var(--scapp-v2-control-padding-x);color:inherit;font-family:inherit;font-size:inherit;font-weight:400;line-height:var(--scapp-v2-control-line-height);text-align:left;cursor:pointer;box-sizing:border-box;}
+.taisho-select>button:hover,.taisho-select>button:focus-visible{border-color:#b8b6ad;outline:none;}
+.taisho-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;}
+.taisho-chevron{width:7px;height:7px;border-right:1px solid;border-bottom:1px solid;transform:rotate(45deg);margin-top:-4px;margin-right:4px;flex:none;}
+.taisho-options{position:absolute;top:calc(100% + 2px);left:0;right:0;z-index:100;max-height:300px;overflow:auto;background:#fdfdf8;border:1px solid #d3d2ca;box-shadow:0 4px 12px #0002;font-family:inherit;font-size:inherit;}
+.taisho-options[hidden]{display:none;}
+.taisho-options button{display:block;width:100%;min-height:var(--scapp-v2-control-option-min-height);white-space:normal;overflow-wrap:anywhere;padding:var(--scapp-v2-control-option-padding-y) var(--scapp-v2-control-padding-x);text-align:left;border:0;border-radius:0;background:transparent;color:inherit;font-family:inherit;font-size:inherit;font-weight:400;line-height:var(--scapp-v2-control-line-height);cursor:pointer;}
+.taisho-options button:hover,.taisho-options button:focus{background:#ecebe3;outline:none;}
+.taisho-options button[aria-selected=true]{background:#ecebe3;font-weight:600;}
+.taisho-buttons{display:flex;gap:8px;margin-top:10px;}
+.taisho-buttons button{flex:1;height:var(--scapp-v2-control-height);min-width:0;padding:0 8px;border:1px solid #d3d2ca;background:#fdfdf8;color:inherit;border-radius:0;font-family:inherit;font-size:inherit;font-weight:400;line-height:var(--scapp-v2-control-line-height);white-space:nowrap;cursor:pointer;box-sizing:border-box;}
+.taisho-buttons button:hover:not(:disabled),.taisho-buttons button:focus-visible:not(:disabled){border-color:#b8b6ad;outline:none;}
+.taisho-buttons button:disabled{opacity:var(--scapp-v2-disabled-opacity);cursor:default;}
+[data-taisho-root] *{scrollbar-width:thin;scrollbar-color:#ccc transparent;}[data-taisho-root] ::-webkit-scrollbar{width:6px;}[data-taisho-root] ::-webkit-scrollbar-thumb{background:#ccc;}

@@ -1,0 +1,65 @@
+
+:root {
+    font-size: 16px;
+    --dl-bg-main: #fdfdf8;
+    --dl-bg-sidebar: #f0f0ec;
+    --dl-border-main: #d3d2ca;
+    --dl-primary: #3d3a2a;
+    --dl-bg: #ecebe3;
+    --dl-dict-bg: #ecebe3;
+    --dl-dict-inner-bg: #ecebe3;
+    --dl-sidebar-dict-bg: #ecebe3;
+    --dl-popup-bg: #ecebe3;
+    --dl-lookup-bg: #ecebe3;
+    --dl-bg-hover: #d3d2ca;
+    --dl-border: #d3d2ca;
+    --dl-border-soft: #eee;
+    --dl-scrollbar-width: 4px;
+    --dl-scrollbar-thumb: rgba(61, 58, 42, 0.24);
+    --dl-scrollbar-thumb-hover: rgba(61, 58, 42, 0.36);
+    --dl-scrollbar-track: transparent;
+    --dl-scrollbar-radius: 999px;
+    --dl-scrollbar: var(--dl-scrollbar-thumb);
+
+    --dl-text: #3d3a2a;
+    --dl-text-soft: #444;
+    --dl-muted: rgba(61, 58, 42, 0.7);
+    --dl-muted-light: rgba(61, 58, 42, 0.7);
+
+    --dl-pali: #d63031;
+    --dl-en: #5d7367;
+    --dl-highlight: #ffeb3b;
+
+    --dl-gap: 20px;
+    --dl-reader-gap: 20px;
+    --dl-panel-width: 320px;
+    --dl-panel-padding: 15px;
+    --dl-cell-padding: 8px;
+    --dl-cell-padding-large: 8px;
+    --dl-radius: 3px;
+    --dl-popup-width: 480px;
+    --dl-popup-max-height: 400px;
+    --dl-popup-z-index: 999999;
+
+    --dl-font-ui: 'Source Sans', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --dl-font-reader: 'Source Sans', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --dl-font-mono: 'SpaceMono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --dl-reader-font-size: 1rem;
+    --dl-reader-line-height: 1.6;
+    --dl-reader-chant-font-size: 1.6rem;
+    --dl-reader-chant-line-height: 1.6;
+    --dl-code-font-size: .75rem;
+    --dl-code-bg: #ecebe4;
+    --dl-word-padding: 0 1px;
+    --dl-glossary-word-padding: 0 2px;
+    --dl-glossary-word-padding-x: 2px;
+    --dl-popup-title-font-size: 1.2rem;
+    --dl-popup-badge-font-size: 0.65rem;
+}
+
+
+.english-data-reader-v2 {width:100%;box-sizing:border-box;position:relative;color:#3d3a2a;}
+.english-data-reader-v2 .eng-word {cursor:pointer;transition:.15s;color:inherit;background:transparent;border:none;border-bottom:1px solid transparent;padding:0;border-radius:0;font-weight:inherit;}
+.english-data-reader-v2 .eng-word:hover,.english-data-reader-v2 .eng-word.active-en {color:#5d7367;border-bottom-color:#5d7367;}
+.english-data-reader-v2 .english-data-popup {position:fixed;z-index:999999;display:none;width:min(510px,calc(100vw - 24px));max-height:72vh;overflow:auto;background:var(--eng-popup-bg,#f4f3ec);border:1px solid var(--eng-border,#d3d2ca);box-shadow:0 4px 18px rgba(0,0,0,.22);padding:12px;box-sizing:border-box;color:var(--eng-reader-text,#3d3a2a);font-family:var(--eng-reader-font,inherit);line-height:var(--eng-reader-line-height,1.6);}
+.english-data-reader-v2 .english-data-popup.visible {display:block;}

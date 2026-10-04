@@ -1,0 +1,168 @@
+
+.panel-reader-v2 {
+    font-size: 16px;
+    --dl-bg-main: #fdfdf8;
+    --dl-bg-sidebar: #f0f0ec;
+    --dl-border-main: #d3d2ca;
+    --dl-primary: #3d3a2a;
+    --dl-bg: #ecebe3;
+    --dl-dict-bg: #ecebe3;
+    --dl-dict-inner-bg: #ecebe3;
+    --dl-sidebar-dict-bg: #ecebe3;
+    --dl-popup-bg: #ecebe3;
+    --dl-lookup-bg: #ecebe3;
+    --dl-bg-hover: #d3d2ca;
+    --dl-border: #d3d2ca;
+    --dl-border-soft: #eee;
+    --dl-scrollbar-width: 4px;
+    --dl-scrollbar-thumb: rgba(61, 58, 42, 0.24);
+    --dl-scrollbar-thumb-hover: rgba(61, 58, 42, 0.36);
+    --dl-scrollbar-track: transparent;
+    --dl-scrollbar-radius: 999px;
+    --dl-scrollbar: var(--dl-scrollbar-thumb);
+
+    --dl-text: #3d3a2a;
+    --dl-text-soft: #444;
+    --dl-muted: rgba(61, 58, 42, 0.7);
+    --dl-muted-light: rgba(61, 58, 42, 0.7);
+
+    --dl-pali: #d63031;
+    --dl-en: #5d7367;
+    --dl-highlight: #ffeb3b;
+
+    --dl-gap: 20px;
+    --dl-reader-gap: 20px;
+    --dl-panel-width: 320px;
+    --dl-panel-padding: 15px;
+    --dl-cell-padding: 8px;
+    --dl-cell-padding-large: 8px;
+    --dl-radius: 3px;
+    --dl-popup-width: 480px;
+    --dl-popup-max-height: 400px;
+    --dl-popup-z-index: 999999;
+
+    --dl-font-ui: 'Source Sans', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --dl-font-reader: 'Source Sans', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --dl-font-mono: 'SpaceMono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --dl-reader-font-size: 1rem;
+    --dl-reader-line-height: 1.6;
+    --dl-reader-chant-font-size: 1.6rem;
+    --dl-reader-chant-line-height: 1.6;
+    --dl-code-font-size: .75rem;
+    --dl-code-bg: #ecebe4;
+    --dl-word-padding: 0 1px;
+    --dl-glossary-word-padding: 0 2px;
+    --dl-glossary-word-padding-x: 2px;
+    --dl-popup-title-font-size: 1.2rem;
+    --dl-popup-badge-font-size: 0.65rem;
+}
+
+[data-dictionary-root]{color:var(--dl-text,#3d3a2a);font-family:var(--dl-font-reader,"Source Sans Pro",sans-serif);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6);}
+.dict-layout{height:100%;display:flex;gap:12px;min-width:0}.dict-content{flex:1;min-width:0;overflow:auto}.dict-content table{width:100%;border-collapse:collapse}.dict-content td{padding:8px;vertical-align:top;border:1px solid var(--dl-border,#eaeae3)}
+[data-dict-panel]{flex:1;overflow:auto;min-width:0}.dict-left{display:flex;flex-direction:column;flex:0 0 var(--dl-dict-width,300px);max-width:40%;min-width:0;overflow:hidden}.dict-entry{padding:8px;border-bottom:1px solid var(--dl-border,#d3d2ca)}.dict-word,.pali-word,.eng-word,.eng-sub-word{cursor:pointer}.dict-active{background:var(--dl-bg-hover,#ecebe3)}.dict-popup{position:fixed;z-index:999999;padding:12px;overflow:auto;box-sizing:border-box;background:var(--dl-popup-bg,#ecebe3);color:var(--dl-text,#3d3a2a);border:1px solid var(--dl-border,#d3d2ca);box-shadow:0 4px 18px #0003}.dict-popup-pali{font-family:var(--dl-font-reader,"Source Sans","Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif);margin:0;border-radius:var(--dl-radius,3px);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6);font-weight:400;font-style:normal;text-decoration:none;text-align:left;min-width:min(20em,calc(100vw - 24px));max-width:min(550px,calc(100vw - 24px));max-height:calc(100vh - 24px);height:auto;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;pointer-events:auto}.dict-popup-english{max-height:400px}.dict-popup[hidden]{display:none}
+*{scrollbar-width:thin;scrollbar-color:#ccc transparent}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#ccc}
+
+:host [data-dictionary-root] {
+    --dl-bg-main: var(--st-background-color);
+    --dl-bg-sidebar: var(--st-background-color);
+    --dl-dict-bg: var(--st-background-color);
+    --dl-dict-inner-bg: var(--st-background-color);
+    --dl-sidebar-dict-bg: var(--st-background-color);
+    --eng-bg-main: var(--st-background-color);
+    --eng-bg-sidebar: var(--st-background-color);
+    --eng-dict-bg: var(--st-background-color);
+    --eng-dict-inner-bg: var(--st-background-color);
+    --dict-panel-surface: var(--st-background-color);
+    --dl-bg: var(--st-secondary-background-color);
+    --dl-bg-hover: var(--st-secondary-background-color);
+    --dl-popup-bg: var(--st-secondary-background-color);
+    --dl-lookup-bg: var(--st-secondary-background-color);
+    --eng-bg-sec: var(--st-secondary-background-color);
+    --eng-bg-hover: var(--st-secondary-background-color);
+    --eng-popup-bg: var(--st-secondary-background-color);
+    --dl-text: var(--st-text-color);
+    --eng-text: var(--st-text-color);
+    --dl-primary: var(--st-primary-color);
+    --eng-primary: var(--st-primary-color);
+    --dl-border: var(--st-border-color);
+    --dl-border-main: var(--st-border-color);
+    --eng-border: var(--st-border-color);
+    --dl-font-reader: var(--st-font);
+    --dl-font-ui: var(--st-font);
+    --eng-font-reader: var(--st-font);
+    --eng-font-ui: var(--st-font);
+    --dl-font-mono: var(--st-code-font);
+    --eng-font-mono: var(--st-code-font);
+    --dl-code-bg: var(--st-code-background-color);
+    --eng-code-bg: var(--st-code-background-color);
+    --dl-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --eng-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+}
+:host [data-dictionary-root] [data-dict-neutral-surface] {
+    background-color: var(--st-background-color) !important;
+}
+
+.reader-keyword-highlight {
+    background-color: #ffe066; color: inherit; font: inherit;
+    padding: 0; border-radius: 2px; pointer-events: none;
+}
+
+[data-dictionary-root] {
+    --dict-main-surface: #fdfdf8;
+    --dict-panel-surface: #fdfdf8;
+}
+[data-dictionary-root] [data-dict-panel] > .dict-entry:last-child {
+    border-bottom: 0;
+}
+[data-dictionary-root] [data-dict-panel] > .dict-entry:last-child [data-dict-terminal-wrapper] {
+    border-bottom: 0 !important;
+}
+[data-dictionary-root] [data-dict-panel] > .dict-entry:last-child [data-dict-terminal-rule] {
+    display: none;
+}
+
+
+[data-dictionary-root]{color:var(--dl-text,#3d3a2a);font-family:var(--dl-font-reader,"Source Sans Pro",sans-serif);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6);}
+.dict-layout{height:100%;display:flex;gap:12px;min-width:0}.dict-content{flex:1;min-width:0;overflow:auto}.dict-content table{width:100%;border-collapse:collapse}.dict-content td{padding:8px;vertical-align:top;border:1px solid var(--dl-border,#eaeae3)}
+[data-dict-panel]{flex:1;overflow:auto;min-width:0}.dict-left{display:flex;flex-direction:column;flex:0 0 var(--dl-dict-width,300px);max-width:40%;min-width:0;overflow:hidden}.dict-entry{padding:8px;border-bottom:1px solid var(--dl-border,#d3d2ca)}.dict-word,.pali-word,.eng-word,.eng-sub-word{cursor:pointer}.dict-active{background:var(--dl-bg-hover,#ecebe3)}.dict-popup{position:fixed;z-index:999999;padding:12px;overflow:auto;box-sizing:border-box;background:var(--dl-popup-bg,#ecebe3);color:var(--dl-text,#3d3a2a);border:1px solid var(--dl-border,#d3d2ca);box-shadow:0 4px 18px #0003}.dict-popup-pali{font-family:var(--dl-font-reader,"Source Sans","Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif);margin:0;border-radius:var(--dl-radius,3px);font-size:var(--dl-reader-font-size,1rem);line-height:var(--dl-reader-line-height,1.6);font-weight:400;font-style:normal;text-decoration:none;text-align:left;min-width:min(20em,calc(100vw - 24px));max-width:min(550px,calc(100vw - 24px));max-height:calc(100vh - 24px);height:auto;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;pointer-events:auto}.dict-popup-english{max-height:400px}.dict-popup[hidden]{display:none}
+*{scrollbar-width:thin;scrollbar-color:#ccc transparent}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#ccc}
+
+:host [data-dictionary-root] {
+    --dl-bg-main: var(--st-background-color);
+    --dl-bg-sidebar: var(--st-background-color);
+    --dl-dict-bg: var(--st-background-color);
+    --dl-dict-inner-bg: var(--st-background-color);
+    --dl-sidebar-dict-bg: var(--st-background-color);
+    --eng-bg-main: var(--st-background-color);
+    --eng-bg-sidebar: var(--st-background-color);
+    --eng-dict-bg: var(--st-background-color);
+    --eng-dict-inner-bg: var(--st-background-color);
+    --dict-panel-surface: var(--st-background-color);
+    --dl-bg: var(--st-secondary-background-color);
+    --dl-bg-hover: var(--st-secondary-background-color);
+    --dl-popup-bg: var(--st-secondary-background-color);
+    --dl-lookup-bg: var(--st-secondary-background-color);
+    --eng-bg-sec: var(--st-secondary-background-color);
+    --eng-bg-hover: var(--st-secondary-background-color);
+    --eng-popup-bg: var(--st-secondary-background-color);
+    --dl-text: var(--st-text-color);
+    --eng-text: var(--st-text-color);
+    --dl-primary: var(--st-primary-color);
+    --eng-primary: var(--st-primary-color);
+    --dl-border: var(--st-border-color);
+    --dl-border-main: var(--st-border-color);
+    --eng-border: var(--st-border-color);
+    --dl-font-reader: var(--st-font);
+    --dl-font-ui: var(--st-font);
+    --eng-font-reader: var(--st-font);
+    --eng-font-ui: var(--st-font);
+    --dl-font-mono: var(--st-code-font);
+    --eng-font-mono: var(--st-code-font);
+    --dl-code-bg: var(--st-code-background-color);
+    --eng-code-bg: var(--st-code-background-color);
+    --dl-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+    --eng-muted: color-mix(in srgb, var(--st-text-color) 70%, transparent);
+}
+:host [data-dictionary-root] [data-dict-neutral-surface] {
+    background-color: var(--st-background-color) !important;
+}

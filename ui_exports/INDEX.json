@@ -1,0 +1,686 @@
+[
+  {
+    "case": "dt-00",
+    "root": 0,
+    "html": "dt-00/root-00.html",
+    "css": "dt-00/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-00.dom.json"
+  },
+  {
+    "case": "dt-00",
+    "root": 1,
+    "html": "dt-00/root-01.html",
+    "css": "dt-00/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-00.dom.json"
+  },
+  {
+    "case": "dt-01",
+    "root": 0,
+    "html": "dt-01/root-00.html",
+    "css": "dt-01/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-01.dom.json"
+  },
+  {
+    "case": "dt-01",
+    "root": 1,
+    "html": "dt-01/root-01.html",
+    "css": "dt-01/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-01.dom.json"
+  },
+  {
+    "case": "dt-02",
+    "root": 0,
+    "html": "dt-02/root-00.html",
+    "css": "dt-02/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-02.dom.json"
+  },
+  {
+    "case": "dt-03",
+    "root": 0,
+    "html": "dt-03/root-00.html",
+    "css": "dt-03/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-03.dom.json"
+  },
+  {
+    "case": "dt-04",
+    "root": 0,
+    "html": "dt-04/root-00.html",
+    "css": "dt-04/root-00.css",
+    "inherited_theme": {
+      "background": "#f0f0ec",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-04.dom.json"
+  },
+  {
+    "case": "dt-04",
+    "root": 1,
+    "html": "dt-04/root-01.html",
+    "css": "dt-04/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/dt-04.dom.json"
+  },
+  {
+    "case": "reading-00",
+    "root": 0,
+    "html": "reading-00/root-00.html",
+    "css": "reading-00/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-00.dom.json"
+  },
+  {
+    "case": "reading-00",
+    "root": 1,
+    "html": "reading-00/root-01.html",
+    "css": "reading-00/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-00.dom.json"
+  },
+  {
+    "case": "reading-00",
+    "root": 2,
+    "html": "reading-00/root-02.html",
+    "css": "reading-00/root-02.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-00.dom.json"
+  },
+  {
+    "case": "reading-00",
+    "root": 3,
+    "html": "reading-00/root-03.html",
+    "css": "reading-00/root-03.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-00.dom.json"
+  },
+  {
+    "case": "reading-01",
+    "root": 0,
+    "html": "reading-01/root-00.html",
+    "css": "reading-01/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-01.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 0,
+    "html": "reading-02/root-00.html",
+    "css": "reading-02/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 1,
+    "html": "reading-02/root-01.html",
+    "css": "reading-02/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 2,
+    "html": "reading-02/root-02.html",
+    "css": "reading-02/root-02.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 3,
+    "html": "reading-02/root-03.html",
+    "css": "reading-02/root-03.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 4,
+    "html": "reading-02/root-04.html",
+    "css": "reading-02/root-04.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 5,
+    "html": "reading-02/root-05.html",
+    "css": "reading-02/root-05.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 6,
+    "html": "reading-02/root-06.html",
+    "css": "reading-02/root-06.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 7,
+    "html": "reading-02/root-07.html",
+    "css": "reading-02/root-07.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 8,
+    "html": "reading-02/root-08.html",
+    "css": "reading-02/root-08.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-02",
+    "root": 9,
+    "html": "reading-02/root-09.html",
+    "css": "reading-02/root-09.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-02.dom.json"
+  },
+  {
+    "case": "reading-03",
+    "root": 0,
+    "html": "reading-03/root-00.html",
+    "css": "reading-03/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/reading-03.dom.json"
+  },
+  {
+    "case": "sc-00",
+    "root": 0,
+    "html": "sc-00/root-00.html",
+    "css": "sc-00/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/sc-00.dom.json"
+  },
+  {
+    "case": "sc-01",
+    "root": 0,
+    "html": "sc-01/root-00.html",
+    "css": "sc-01/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/sc-01.dom.json"
+  },
+  {
+    "case": "sc-02",
+    "root": 0,
+    "html": "sc-02/root-00.html",
+    "css": "sc-02/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/sc-02.dom.json"
+  },
+  {
+    "case": "sc-03",
+    "root": 0,
+    "html": "sc-03/root-00.html",
+    "css": "sc-03/root-00.css",
+    "inherited_theme": {
+      "background": "#f0f0ec",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/sc-03.dom.json"
+  },
+  {
+    "case": "sc-03",
+    "root": 1,
+    "html": "sc-03/root-01.html",
+    "css": "sc-03/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/sc-03.dom.json"
+  },
+  {
+    "case": "sc-04",
+    "root": 0,
+    "html": "sc-04/root-00.html",
+    "css": "sc-04/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/sc-04.dom.json"
+  },
+  {
+    "case": "ss-00",
+    "root": 0,
+    "html": "ss-00/root-00.html",
+    "css": "ss-00/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-00.dom.json"
+  },
+  {
+    "case": "ss-00",
+    "root": 1,
+    "html": "ss-00/root-01.html",
+    "css": "ss-00/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-00.dom.json"
+  },
+  {
+    "case": "ss-01",
+    "root": 0,
+    "html": "ss-01/root-00.html",
+    "css": "ss-01/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-01.dom.json"
+  },
+  {
+    "case": "ss-01",
+    "root": 1,
+    "html": "ss-01/root-01.html",
+    "css": "ss-01/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-01.dom.json"
+  },
+  {
+    "case": "ss-02",
+    "root": 0,
+    "html": "ss-02/root-00.html",
+    "css": "ss-02/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-02.dom.json"
+  },
+  {
+    "case": "ss-03",
+    "root": 0,
+    "html": "ss-03/root-00.html",
+    "css": "ss-03/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-03.dom.json"
+  },
+  {
+    "case": "ss-04",
+    "root": 0,
+    "html": "ss-04/root-00.html",
+    "css": "ss-04/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-04.dom.json"
+  },
+  {
+    "case": "ss-04",
+    "root": 1,
+    "html": "ss-04/root-01.html",
+    "css": "ss-04/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-04.dom.json"
+  },
+  {
+    "case": "ss-05",
+    "root": 0,
+    "html": "ss-05/root-00.html",
+    "css": "ss-05/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-05.dom.json"
+  },
+  {
+    "case": "ss-06",
+    "root": 0,
+    "html": "ss-06/root-00.html",
+    "css": "ss-06/root-00.css",
+    "inherited_theme": {
+      "background": "#f0f0ec",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-06.dom.json"
+  },
+  {
+    "case": "ss-06",
+    "root": 1,
+    "html": "ss-06/root-01.html",
+    "css": "ss-06/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-06.dom.json"
+  },
+  {
+    "case": "ss-07",
+    "root": 0,
+    "html": "ss-07/root-00.html",
+    "css": "ss-07/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/ss-07.dom.json"
+  },
+  {
+    "case": "td-00",
+    "root": 0,
+    "html": "td-00/root-00.html",
+    "css": "td-00/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-00.dom.json"
+  },
+  {
+    "case": "td-01",
+    "root": 0,
+    "html": "td-01/root-00.html",
+    "css": "td-01/root-00.css",
+    "inherited_theme": {
+      "background": "#f0f0ec",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-01.dom.json"
+  },
+  {
+    "case": "td-01",
+    "root": 1,
+    "html": "td-01/root-01.html",
+    "css": "td-01/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-01.dom.json"
+  },
+  {
+    "case": "td-02",
+    "root": 0,
+    "html": "td-02/root-00.html",
+    "css": "td-02/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-02.dom.json"
+  },
+  {
+    "case": "td-03",
+    "root": 0,
+    "html": "td-03/root-00.html",
+    "css": "td-03/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-03.dom.json"
+  },
+  {
+    "case": "td-04",
+    "root": 0,
+    "html": "td-04/root-00.html",
+    "css": "td-04/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-04.dom.json"
+  },
+  {
+    "case": "td-05",
+    "root": 0,
+    "html": "td-05/root-00.html",
+    "css": "td-05/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-05.dom.json"
+  },
+  {
+    "case": "td-06",
+    "root": 0,
+    "html": "td-06/root-00.html",
+    "css": "td-06/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-06.dom.json"
+  },
+  {
+    "case": "td-07",
+    "root": 0,
+    "html": "td-07/root-00.html",
+    "css": "td-07/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-07.dom.json"
+  },
+  {
+    "case": "td-08",
+    "root": 0,
+    "html": "td-08/root-00.html",
+    "css": "td-08/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-08.dom.json"
+  },
+  {
+    "case": "td-09",
+    "root": 0,
+    "html": "td-09/root-00.html",
+    "css": "td-09/root-00.css",
+    "inherited_theme": {
+      "background": "#f0f0ec",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-09.dom.json"
+  },
+  {
+    "case": "td-09",
+    "root": 1,
+    "html": "td-09/root-01.html",
+    "css": "td-09/root-01.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-09.dom.json"
+  },
+  {
+    "case": "td-10",
+    "root": 0,
+    "html": "td-10/root-00.html",
+    "css": "td-10/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/td-10.dom.json"
+  },
+  {
+    "case": "tools-02",
+    "root": 0,
+    "html": "tools-02/root-00.html",
+    "css": "tools-02/root-00.css",
+    "inherited_theme": {
+      "background": "",
+      "secondary": "",
+      "text": ""
+    },
+    "snapshot": "reports/browser/tools-02.dom.json"
+  },
+  {
+    "case": "narrow-reading",
+    "root": 0,
+    "html": "narrow-reading/root-00.html",
+    "css": "narrow-reading/root-00.css",
+    "inherited_theme": {
+      "background": "#fdfdf8",
+      "secondary": "#ecebe3",
+      "text": "#3d3a2a"
+    },
+    "snapshot": "reports/browser/narrow-reading.dom.json"
+  }
+]

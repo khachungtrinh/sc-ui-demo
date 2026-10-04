@@ -1,0 +1,15 @@
+.result-list-v2 {width:100%;color:inherit;font:inherit;box-sizing:border-box;}
+.result-list-v2 h5 {font:inherit;font-size:1.125rem;font-weight:600;margin:0 0 1rem;}
+.result-list-v2 p {margin:0 0 1rem;}
+.result-list-v2 hr {margin:.5rem 0;opacity:.65;}
+.result-list-v2 [data-result-snippet] {font-size:.90rem;color:#555555;border-left:2px solid #555;padding-left:10px;margin-bottom:10px;overflow-wrap:anywhere;}
+.result-list-v2 mark {color:black;padding:0 2px;border-radius:2px;}
+.result-list-v2 [data-result-actions] {display:flex;justify-content:space-between;gap:1rem;}
+.result-list-v2 [data-result-actions] button:only-child {width:100%;}
+.result-list-v2 nav {display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin:1rem 0;}
+.result-list-v2 button {font:inherit;color:inherit;background:transparent;border:1px solid #9996;border-radius:.4rem;padding:.3rem .6rem;cursor:pointer;}
+.result-list-v2 button[aria-current="page"] {background:#f0f2f6;border-color:#777;}
+.result-list-v2 button:disabled {opacity:.45;cursor:default;}
+.result-list-v2 button:focus-visible {outline:2px solid #1678cb;outline-offset:2px;}
+.result-list-v2 [data-icon] {font-family:'Material Symbols Rounded';vertical-align:middle;}
+.result-list-v2 [data-tdk-body] {overflow-wrap:anywhere;}
